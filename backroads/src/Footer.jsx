@@ -8,7 +8,7 @@ function Footer() {
         {pageLinks.map((link) => {
           return (
             <li key={link.id}>
-              <a href={link.href} className="nav-link">
+              <a href={link.href} className="footer-link">
                 {link.text}
               </a>
             </li>
@@ -19,7 +19,7 @@ function Footer() {
         {socialLinks.map((link) => {
           return (
             <li key={link.id}>
-              <a href={link.href} target="_blank" className="nav-icon">
+              <a href={link.href} target="_blank" className="footer-icon">
                 <i className={link.icon}></i>
               </a>
             </li>
