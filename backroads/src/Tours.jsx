@@ -9,6 +9,10 @@ function Tours() {
 
       <div className="section-center featured-center">
         {tours.map((tour) => {
+          const searchQuery = tour.location.substring(0, 10);
+          const mapLink = `https://www.google.com/maps?q=${encodeURIComponent(
+            searchQuery
+          )}`;
           return (
             <article key={tour.id} className="tour-card">
               <div className="tour-img-container">
@@ -24,7 +28,13 @@ function Tours() {
                 <div className="tour-footer">
                   <p>
                     <span>
-                      <i className="fas fa-map"></i>
+                      <a
+                        href={mapLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fas fa-map"></i>
+                      </a>
                     </span>{" "}
                     {tour.location}
                   </p>

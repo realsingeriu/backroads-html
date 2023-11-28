@@ -46,6 +46,8 @@ export const tours = [
     title: "Tibet Adventure",
     info: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.`,
     location: "china",
+    icon: "fas fa-map",
+    href: "https://www.google.co.kr",
     duration: 6,
     cost: 2100,
   },
