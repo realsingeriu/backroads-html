@@ -22,18 +22,18 @@ export const services = [
     id: 1,
     icon: "fas fa-wallet fa-fw",
     title: "saving money",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+    text: "공동구매로 여러분의 머니를 아낄 수 있습니다.",
   },
   {
     id: 2,
     icon: "fas fa-tree fa-fw",
     title: "endless hiking",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+    text: "매일매일 하이킹 가능합니다.",
   },
   {
     id: 3,
     icon: "fas fa-socks fa-fw",
     title: "amazing comfort",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+    text: "고객에 요구에 맞게 편리하고 재미있는 여행이 가능합니다.",
   },
 ];
