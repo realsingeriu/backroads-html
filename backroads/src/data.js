@@ -3,12 +3,14 @@ import tour2 from "/images/tour-2.jpeg";
 import tour3 from "/images/tour-3.jpeg";
 import tour4 from "/images/tour-4.jpeg";
 
+// 페이지 링크 메뉴
 export const pageLinks = [
   { id: 1, href: "#home", text: "home" },
   { id: 2, href: "#about", text: "about" },
   { id: 3, href: "#services", text: "services" },
   { id: 4, href: "#tours", text: "tours" },
 ];
+// 소셜 링크 메뉴
 export const socialLinks = [
   { id: 1, href: "https://www.twitter.com", icon: "fab fa-facebook" },
   { id: 2, href: "https://www.twitter.com", icon: "fab fa-twitter" },
