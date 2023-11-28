@@ -1,19 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { pageLinks, socialLinks } from "./data";
 
 function Navbar() {
+  const [showLink, setshowLink] = useState(false);
+  const toggleLink = () => {
+    showLink ? setshowLink(false) : setshowLink(true);
+  };
+  useEffect(() => {
+    if (showLink) {
+      setTimeout(() => {
+        setshowLink(false);
+      }, 5000);
+    }
+  });
   return (
     <div>
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
             <img src="/images/logo.svg" className="nav-logo" alt="backroads" />
-            <button type="button" className="nav-toggle" id="nav-toggle">
+            <button
+              type="button"
+              className="nav-toggle"
+              id="nav-toggle"
+              onClick={toggleLink}
+            >
               <i className="fas fa-bars"></i>
             </button>
           </div>
 
-          <ul className="nav-links" id="nav-links">
+          <ul
+            className={`${showLink ? "nav-links show-links" : "nav-links"}`}
+            id="nav-links"
+          >
             {pageLinks.map((link) => {
               return (
                 <li key={link.id}>

@@ -12,7 +12,7 @@ function Services() {
           return (
             <article key={service.id} className="service">
               <span className="service-icon">
-                <i className="service.icon"></i>
+                <i className={service.icon}></i>
               </span>
             </article>
           );
