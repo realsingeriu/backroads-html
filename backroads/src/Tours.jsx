@@ -18,6 +18,7 @@ function Tours() {
               <div className="tour-info">
                 <div className="tour-title">
                   <h4>{tour.title}</h4>
+                  <p>{tour.info}</p>
                 </div>
                 <p>{tour.description}</p>
                 <div className="tour-footer">
